@@ -34,4 +34,19 @@ export class AppComponent {
     this.serverElements.splice(0, 1);
   }
 
+
+  // ASSIGNMENT4
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
+
+
+  onIntervalFired(firedNumber: number) {
+    if (firedNumber % 2 === 0) {
+      this.evenNumbers.push(firedNumber);
+    } else {
+      this.oddNumbers.push(firedNumber);
+    }
+  }
+
+
 }
