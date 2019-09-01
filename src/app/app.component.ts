@@ -36,17 +36,25 @@ export class AppComponent {
 
 
   // ASSIGNMENT4
-  oddNumbers: number[] = [];
-  evenNumbers: number[] = [];
+  // oddNumbers: number[] = [];
+  // evenNumbers: number[] = [];
 
 
-  onIntervalFired(firedNumber: number) {
-    if (firedNumber % 2 === 0) {
-      this.evenNumbers.push(firedNumber);
-    } else {
-      this.oddNumbers.push(firedNumber);
-    }
-  }
+  // onIntervalFired(firedNumber: number) {
+  //   if (firedNumber % 2 === 0) {
+  //     this.evenNumbers.push(firedNumber);
+  //   } else {
+  //     this.oddNumbers.push(firedNumber);
+  //   }
+  // }
+
+
+  // DIRECTIVES DEEP DIVE
+  // numbers = [1, 2, 3, 4, 5];
+  oddNumbers = [1,3,5];
+  evenNumbers = [2,4]
+
+  onlyOdd = false;
 
 
 }
