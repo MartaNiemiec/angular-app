@@ -5,7 +5,7 @@ import { AccountsService } from './accounts.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [AccountsService]  // don't provide AccountsService because it is provided by the parent component(app.component)
+  providers: [] // AccountsService is provided by the app.module
 })
 export class AppComponent {
   title = 'angular-app';

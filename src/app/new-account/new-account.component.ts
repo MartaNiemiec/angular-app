@@ -6,7 +6,7 @@ import { AccountsService } from '../accounts.service';
   selector: 'app-new-account',
   templateUrl: './new-account.component.html',
   styleUrls: ['./new-account.component.css'],
-  providers: [LoggingService] // don't provide AccountsService because it is provided by the parent component(app.component)
+  // providers: [LoggingService, AccountsService]  // don't provide AccountsService and LoggingService because are provided by the app.module
 })
 export class NewAccountComponent {
   constructor(
@@ -16,6 +16,6 @@ export class NewAccountComponent {
 
   onCreateAccount(accountName: string, accountStatus: string) {
     this.accountsService.addAccount(accountName, accountStatus);
-    this.loggingService.logStatusChange(accountName);
+    // this.loggingService.logStatusChange(accountName);
   }
 }
